@@ -22,8 +22,8 @@ var score = 0;
 
 var flag_a = 0;
 var flag_b = 0;
-var level_speed_map = { 1 : 100, 2 : 150, 3 : 200};
-var level_clear_speed_map = { 1 : 10, 2 : 20, 3 : 50};
+var level_speed_map = { 1 : 100, 2 : 100, 3 : 100};
+var level_clear_speed_map = { 1 : 10, 2 : 50, 3 : 100};
 
 function loadImage(onComplete) {
 	image = new Image();
