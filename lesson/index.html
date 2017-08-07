@@ -1,42 +1,10 @@
 <!DOCTYPE>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>ゲーム</title>
+<head>
+<title>ゲーム</title>
+<script src="main.js"></script>
+<body>
+  <canvas id="maincanvas"></canvas>
+ </body>
+ </html>
 
-	</head>
-	<body>
-		<canvas id="main_canvas"
-			width="640px"
-			height="480px">
-		</canvas>
-	</body>
-</html>
-var boxX = 0;
-
-function init(){
-
-	loadImage(function() {
-
-	});
-}
-
-function render() {
-	// 画面をクリア
-	// clearRect(X,Y,幅,高さ)
-
-	ctx.clearRect(
-		0, 0, canvas.width, canvas.height
-	);
-	
-	ctx.drawImage(image, boxX, 0);
-}
-
-function update() {
-	window.requestAnimationFrame(update);
-	boxX += 1;
-
-	render();
-}
-
-// みかん箱のX座標
